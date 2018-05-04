@@ -4,13 +4,17 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+    <h:head>
+        <ui:insert name="head"/>
+    </h:head>
 
     <h:body>
 
-        body content  
+        <p>body content</p>  
         <ui:insert name="body"/>
         <ui:fragment rendered="#{param eq 'true'}">
-            param is true
+            <p>param is true</p>
         </ui:fragment>
 
     </h:body>
